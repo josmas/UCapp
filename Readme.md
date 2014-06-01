@@ -1,6 +1,8 @@
 #Cordova Integration for Union Capital Boston -- #RHoKBoston14
 
-This app was created for RHoK Boston 14 and it integrates a meteor based app for Union Capital Boston. Find the repo [here](https://github.com/drenfr01/unionCapital).
+This app was created for RHoK Boston 14 and it integrates a meteor based app for Union Capital Boston. 
+
+Find the meteor app repo [here](https://github.com/drenfr01/unionCapital). There is also a [branch](https://github.com/drenfr01/unionCapital/tree/cordova) with a couple of changes to make the integration work.
 
 ## Background Info for the integration
 There is a github organization that is compiling all available data and
