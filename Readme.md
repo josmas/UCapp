@@ -1,6 +1,6 @@
 #Cordova Integration for Union Capital Boston -- #RHoKBoston14
 
-This app was created for RHoK Boston 14 and it integrates a meteor based app for [Union Capital Boston](https://github.com/drenfr01/unionCapital).
+This app was created for RHoK Boston 14 and it integrates a meteor based app for Union Capital Boston. Find the repo [here](https://github.com/drenfr01/unionCapital).
 
 ## Background Info for the integration
 There is a github organization that is compiling all available data and
@@ -9,7 +9,7 @@ solutions: https://github.com/SpaceCapsule
 Overview of available solutions: There are three different solutions described [here](http://zeroasterisk.com/2013/08/22/meteor-phonegapcordova-roundup-fall-2013/).
 
 I have tried two, but so far only one is working on the phone (showing stuff)
-but the phone is not talking to the back end on this network (see known issues below). The solution that half works is [packmeteor](https://github.com/SpaceCapsule/packmeteor).
+but the phone is not talking to the back end on the GreenTown Labs network (see known issues below). The solution that half works is [packmeteor](https://github.com/SpaceCapsule/packmeteor).
 
 
 ##Steps to build the app
