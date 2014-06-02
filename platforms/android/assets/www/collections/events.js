@@ -29,6 +29,10 @@
             points: {
                        type: Number,
                        label: 'Amount of Points'
+                     },
+            url: {
+                       type: String,
+                       label: 'URL to the event'
                      }
           }
 });

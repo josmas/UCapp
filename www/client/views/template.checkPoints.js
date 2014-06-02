@@ -21,7 +21,7 @@ Template.__define__("checkPoints", (function() {
     }, "\n          ", HTML.A({
       href: "#",
       "class": "btn btn-warning btn-xs"
-    }, "Dispute"), "\n        "), "\n      "), "\n    " ];
+    }, "Feedback"), "\n        "), "\n      "), "\n    " ];
   })), "\n    "), "\n  "), "\n  ", HTML.H3({
     "class": "text-center"
   }, "Total Points: ", function() {

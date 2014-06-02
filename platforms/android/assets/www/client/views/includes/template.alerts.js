@@ -1,18 +1,18 @@
 (function(){
-Template.__define__("errors", (function() {
+Template.__define__("alerts", (function() {
   var self = this;
   var template = this;
   return HTML.DIV({
-    "class": "errors row"
+    "class": "alerts row"
   }, "\n    ", UI.Each(function() {
-    return Spacebars.call(self.lookup("errors"));
+    return Spacebars.call(self.lookup("alerts"));
   }, UI.block(function() {
     var self = this;
-    return [ "\n      ", Spacebars.include(self.lookupTemplate("error")), "\n    " ];
+    return [ "\n      ", Spacebars.include(self.lookupTemplate("alert")), "\n    " ];
   })), "\n  ");
 }));
 
-Template.__define__("error", (function() {
+Template.__define__("alert", (function() {
   var self = this;
   var template = this;
   return HTML.DIV({

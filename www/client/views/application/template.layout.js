@@ -4,7 +4,7 @@ Template.__define__("layout", (function() {
   var template = this;
   return HTML.DIV({
     "class": "container"
-  }, "\n    ", Spacebars.include(self.lookupTemplate("errors")), "\n    ", HTML.DIV({
+  }, "\n    ", HTML.DIV({
     id: "main",
     "class": "row"
   }, "\n      ", HTML.NAV({
@@ -17,7 +17,7 @@ Template.__define__("layout", (function() {
     id: "bs-example-vabar-collapse-1"
   }, "\n            ", HTML.UL({
     "class": "nav navbar-nav"
-  }, HTML.Raw('\n              <!-- <li><a href="/orders">Orders</a></li> -->\n              '), HTML.LI(HTML.A({
+  }, "\n              ", HTML.LI(HTML.A({
     href: function() {
       return Spacebars.mustache(self.lookup("pathFor"), "scanQR");
     }
@@ -29,9 +29,13 @@ Template.__define__("layout", (function() {
     href: function() {
       return Spacebars.mustache(self.lookup("pathFor"), "listEvents");
     }
-  }, "View Upcoming Events")), "\n            "), HTML.Raw('\n            <ul class="nav navbar-nav navbar-left">\n            </ul>\n            '), HTML.UL({
+  }, "View Upcoming Events")), "\n              ", HTML.LI(HTML.A({
+    href: function() {
+      return Spacebars.mustache(self.lookup("pathFor"), "showMemberRewards");
+    }
+  }, "View Rewards")), "\n            "), HTML.Raw('\n            <ul class="nav navbar-nav navbar-left">\n            </ul>\n            '), HTML.UL({
     "class": "nav navbar-nav navbar-right"
-  }, "\n              ", Spacebars.include(self.lookupTemplate("loginButtons")), "\n            "), "\n          "), "\n        "), "\n      "), "\n      \n      ", Spacebars.include(self.lookupTemplate("yield")), "\n    "), "\n  ");
+  }, "\n              ", Spacebars.include(self.lookupTemplate("loginButtons")), "\n            "), "\n          "), "\n        "), "\n      "), "\n    ", Spacebars.include(self.lookupTemplate("alerts")), "\n\n      ", Spacebars.include(self.lookupTemplate("yield")), "\n    "), "\n  ");
 }));
 
 })();
